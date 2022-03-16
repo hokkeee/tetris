@@ -1,12 +1,11 @@
 <!DOCTYPE html>
- <html>
+ <html style=" touch-action: manipulation; background: #e6e6fa;">
   <head>
     <meta charset="UTF-8">
     <title>テトリス風ゲーム</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://hokkeee.github.io/tetris/tetris.css"/>
     <script>
-     class Tetris {
+      class Tetris {
      constructor() {
      this.stageWidth = 10;
      this.stageHeight = 20;
@@ -327,23 +326,23 @@
        }
    }
   
-   </script>
+    </script>
    </head>
     <body>
-     <h1 class="logo">テトリス！</h1>
-     <div class="wrapper-container">
-         <span class="tetris-container">
+     <h1 class="logo" style=" font-size: 30px; color: red;">テトリス！</h1>
+     <div class="wrapper-container" style=" display: inline-block;">
+         <span class="tetris-container" style=" display: flex; flex-direction: row; margin: 10px; background-color: #333333;">
           <canvas id="stage" width="350px" height="700px" style="background-color:black;"> </canvas>
-           <span class="tetris-panel-container">
-             <p>Next:</p>
+           <span class="tetris-panel-container" style=" display: flex; padding-left: 10px;  padding-right: 10px; flex-direction: column; color: white; background-color: #333333;">
+             <p style="margin: 0; padding: 0;">Next:</p>
              <canvas id="next" width="150px" height="150px" style="background-color:black;"></canvas>
              <p>LINES:<span id="lines">0</span></p>
              <p><span id="message"></span></p>
-             <div class="tetris-panel-container-padding"></div>
-             <table class="tetris-button-panel">
+             <div class="tetris-panel-container-padding" style="flex-grow: 1;"></div>
+             <table class="tetris-button-panel" style="border-style: none; width: 100%;">
               <tr>
                 <td></td>
-                <td id="tetris-rotate-button" class="tetris-button">↻</td>
+                <td id="tetris-rotate-button" class="tetris-button" style="padding-top: 10px; padding-bottom: 10px;  text-align: center; background: #444444;">↻</td>
                 <td></td>
                 </tr>
                  <tr>
