@@ -34,7 +34,7 @@ class Tetris {
                 this.moveRight();
             }
             document.getElementById("tetris-fall-button").onmousedown = (e) => {
-                this.fall();
+               this.fall();
             }
         }
     
